@@ -1,13 +1,5 @@
 # Property-Records Search Platform — NYC Open Data → Verified Reports
 
-**GitHub:** https://github.com/9KMan/JOB-20260623135057-000103
-**Client:** Property Records Search Platform
-**Tier:** Expert
-**Budget:** $25-45/hr
-**Status:** Build in Progress
-
----
-
 ## Business Problem Solved
 
 Every day, real-estate services companies pay third-party vendors hundreds of dollars to run municipal and title searches on properties — searches whose underlying data is almost entirely free from official NYC and NY State open-data sources. This platform replaces those vendors with an in-house automation layer: an ordering portal, a resilient data pipeline querying 80+ government datasets, and a branded PDF delivery system — all tracked by internal file number.
