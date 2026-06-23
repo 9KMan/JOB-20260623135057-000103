@@ -1,0 +1,37 @@
+name = "property-records-platform"
+main = "src/workers/search-worker.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = "./src/ui"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "property-records-db"
+database_id = "${D1_DATABASE_ID}"
+
+[[r2_buckets]]
+binding = "REPORTS"
+bucket_name = "property-records-reports"
+
+[[queues]]
+binding = "SEARCH_QUEUE"
+queue = "property-search-queue"
+
+[vars]
+ENVIRONMENT = "production"
+MAX_CONCURRENT_DATASETS = "20"
+
+[env.staging]
+name = "property-records-platform-staging"
+compatibility_date = "2024-11-01"
+
+[env.staging.d1_databases]
+binding = "DB"
+database_name = "property-records-db-staging"
+database_id = "${STAGING_D1_DATABASE_ID}"
+
+[env.staging.r2_buckets]
+binding = "REPORTS"
+bucket_name = "property-records-reports-staging"
